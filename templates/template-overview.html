@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Blog</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #333;
+      }
+      .card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .card a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+      }
+      .card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mohammed Blogs</h1>
+    <div class="container">{{cards}}</div>
+  </body>
+</html>

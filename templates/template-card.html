@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog Cards</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        background: #f7f7f7;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* allow wrapping */
+        justify-content: center; /* center items */
+        gap: 20px; /* space between cards */
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .square {
+        width: 300px; /* smaller width so more fit in row */
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0px 20px 50px #d9dbdf;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .square:hover {
+        transform: translate(5px, -5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .mask {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .h1 {
+        margin: 15px 20px 10px;
+        font-family: "Merriweather", serif;
+        font-size: 18px;
+        color: #333;
+      }
+
+      p {
+        margin: 0 20px 15px;
+        text-align: justify;
+        font-size: 13px;
+        color: #666;
+        line-height: 18px;
+        flex-grow: 1;
+      }
+
+      .button {
+        background-color: antiquewhite;
+        color: rgb(0, 0, 0);
+        padding: 8px 16px;
+        border-radius: 3px;
+        text-decoration: none;
+        margin: 0 20px 20px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: "Merriweather", serif;
+        display: inline-block;
+        align-self: flex-start;
+        font-weight: 700;
+      }
+
+      .button:hover {
+        background-color: rgb(255, 206, 141);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="square">
+        <img src="{{img_url}}" class="mask" alt="Blog image" />
+        <div class="h1">{{title}}</div>
+        <p>{{snippet}}</p>
+        <a href="/post?id={{id}}" class="button">Read More</a>
+      </div>
+    </div>
+  </body>
+</html>

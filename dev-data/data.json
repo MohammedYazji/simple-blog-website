@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "title": "Getting Started with Node.js",
+    "snippet": "Learn the basics of Node.js and why it's so popular for backend development.",
+    "content": "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine. It allows developers to run JavaScript outside the browser, making it possible to build scalable and fast network applications. In this post, we'll explore how Node.js works, why developers love it, and how you can start using it today.",
+    "img_url": "https://images.unsplash.com/photo-1669023414166-a4cc7c0fe1f5?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 1,
+    "title": "Understanding Asynchronous JavaScript",
+    "snippet": "Callbacks, Promises, and Async/Await explained in simple terms.",
+    "content": "JavaScript is single-threaded, which means it can only execute one thing at a time. To handle tasks like network requests, it uses asynchronous programming. We can manage async code with callbacks, but they often lead to 'callback hell'. Promises provide a cleaner solution, and Async/Await makes asynchronous code look synchronous, improving readability.",
+    "img_url": "https://images.unsplash.com/photo-1636646931278-cf779e5acaac?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "title": "Working with the File System in Node.js",
+    "snippet": "Read, write, and manage files easily using the built-in 'fs' module.",
+    "content": "Node.js provides the 'fs' module to interact with the file system. You can read files with fs.readFile, write files with fs.writeFile, and even watch changes using fs.watch. These functions are available in both synchronous and asynchronous versions. Using them effectively is key for building applications that need to handle data storage locally.",
+    "img_url": "https://images.unsplash.com/photo-1707388863824-ef70a83ec52c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
